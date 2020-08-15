@@ -38,6 +38,8 @@ for x in range(0, numgames):
     elif userinput == "scissors" and compchoice == "rock":
         print(compchoice,"smashes",userinput,"You lost this round!")
         compscore += 1
+    elif (userinput == "rock" and compchoice == "rock") or (userinput == "scissors" and compchoice == "scissors") or (userinput == "paper" and compchoice == "paper"):
+        print("Its a Draw!")
 
 if userscore > compscore:
     userwin = True
